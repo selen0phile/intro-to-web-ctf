@@ -1,0 +1,16 @@
+const canvas = document.createElement('canvas');
+canvas.id = 'flagCanvas';
+canvas.width = 600;
+canvas.height = 100;
+canvas.style.display = 'none';
+document.body.appendChild(canvas);
+
+const flag = "FLAG{rendered_not_readable}";
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = "#00ff00";
+ctx.font = "20px monospace";
+ctx.fillText(flag, 10, 30);
+
+// Just for fun, to throw people off
+console.log("Looking for something? 👀");
